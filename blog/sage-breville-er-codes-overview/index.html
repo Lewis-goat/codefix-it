@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Codici ER Sage/Breville: leggere la tabella di servizio nascosta</title>
+<meta name="description" content="Codici ER su Sage e Breville: nascono da tabelle di servizio mai pubblicate. Come sono organizzati gli ER01-ER18 e perché l'Oracle numera diversamente.">
+<link rel="canonical" href="https://it.codefixcoffee.com/blog/sage-breville-er-codes-overview/">
+<link rel="alternate" hreflang="en" href="https://blog.codefixcoffee.com/post/sage-breville-er-codes-overview/" />
+  <link rel="alternate" hreflang="fr" href="https://fr.codefixcoffee.com/blog/sage-breville-er-codes-overview/" />
+  <link rel="alternate" hreflang="de" href="https://de.codefixcoffee.com/blog/sage-breville-er-codes-overview/" />
+  <link rel="alternate" hreflang="es" href="https://es.codefixcoffee.com/blog/sage-breville-er-codes-overview/" />
+  <link rel="alternate" hreflang="it" href="https://it.codefixcoffee.com/blog/sage-breville-er-codes-overview/" />
+  <link rel="alternate" hreflang="pl" href="https://pl.codefixcoffee.com/blog/sage-breville-er-codes-overview/" />
+  <link rel="alternate" hreflang="nl" href="https://nl.codefixcoffee.com/blog/sage-breville-er-codes-overview/" />
+  <link rel="alternate" hreflang="pt" href="https://pt.codefixcoffee.com/blog/sage-breville-er-codes-overview/" />
+  <link rel="alternate" hreflang="hu" href="https://hu.codefixcoffee.com/blog/sage-breville-er-codes-overview/" />
+  <link rel="alternate" hreflang="cs" href="https://cs.codefixcoffee.com/blog/sage-breville-er-codes-overview/" />
+  <link rel="alternate" hreflang="ro" href="https://ro.codefixcoffee.com/blog/sage-breville-er-codes-overview/" />
+  <link rel="alternate" hreflang="sv" href="https://sv.codefixcoffee.com/blog/sage-breville-er-codes-overview/" />
+  <link rel="alternate" hreflang="tr" href="https://tr.codefixcoffee.com/blog/sage-breville-er-codes-overview/" />
+<link rel="stylesheet" href="/blog/blog.css">
+<link rel="alternate" type="application/rss+xml" title="CodeFix Blog" href="/blog/rss.xml">
+</head>
+<body>
+<header class="site"><div class="in"><a class="brand" href="/blog/">☕ CodeFix Blog</a><span><a href="/">Torna al sito</a></span></div></header>
+<main>
+<h1>Codici ER Sage/Breville: leggere la tabella di servizio nascosta</h1>
+<p class="meta">2026-10-21</p>
+<p>Se una macchina da caffè Breville si ferma di colpo mostrando ER05 sul pannello, il manuale non ti dirà che cosa significhi. Non è una svista: i codici d'errore Breville provengono dalle tabelle di servizio interne, usate dai tecnici per le riparazioni e mai diffuse agli utenti. Lo stesso hardware in Italia e nel resto d'Europa arriva con il marchio <strong>Sage</strong> sulla targhetta — macchine identiche — quindi un codice ER su una Sage Barista Touch significa esattamente ciò che significa sulla gemella Breville. La <a href="https://it.codefixcoffee.com/breville/">sezione Breville / Sage</a> copre la gamma attuale; questo articolo spiega come è organizzata la numerazione, così anche un codice mai visto prima ti dice qualcosa di utile.</p>
+<h2>Perché Breville non li pubblica</h2>
+<p>Il manuale utente parla di pulizia e decalcificazione, non di diagnostica. Le tabelle complete vivono nella modalità di servizio di ogni macchina: schermate protette da password e pensate per i tecnici, con contatori d'errore memorizzati e letture dei sensori in diretta. Nati come strumento di riparazione più che come funzione per il proprietario, questi codici non sono mai stati resi pubblici, e la maggior parte degli utenti vede in vita sua soltanto quello che ha causato lo spegnimento. Il contrasto con Miele è netto: i significati dei codici F sono stampati nelle istruzioni operative — verificabili anche tramite il <a href="https://www.miele.com">sito Miele</a> — ed è per questo che le <a href="https://it.codefixcoffee.com/miele/">pagine dei codici Miele</a> possono citare il manuale alla lettera.</p>
+<h2>La tabella della Barista Touch: da ER01 a ER18</h2>
+<p>La Barista Touch (BES880) e la Barista Touch Impress (BES881) — che condividono la stessa famiglia di schede di controllo e quindi la stessa tabella — adoperano una lista da 18 voci. Una volta capita la struttura si legge senza fatica: i codici sensore arrivano a <strong>gruppi di quattro</strong>, un gruppo per sensore, e percorrono circuito aperto all'avvio, circuito aperto in esercizio, cortocircuito all'avvio e cortocircuito in esercizio.</p>
+<ul>
+<li><strong>ER01-ER04</strong> — la sonda di temperatura del riscaldatore ThermoJet nei suoi quattro stati possibili; <a href="https://it.codefixcoffee.com/breville/barista-touch-bes880/er01/">ER01</a> è la variante con circuito aperto all'avvio.</li>
+<li><strong>ER05-ER08</strong> — la sonda della caraffa del latte, la piccola sonda nella zona del vassoio gocce che legge la caraffa mentre la lancia monta il latte. ER05, il circuito aperto all'avvio, è il codice Barista Touch più segnalato in assoluto, e le quattro voci condividono un unico rimedio.</li>
+<li><strong>ER09-ER12</strong> — la sonda di temperatura in linea sull'acqua di erogazione, con lo stesso schema a quattro varianti.</li>
+<li><strong>ER13 ed ER14</strong> — errori di conteggio del flussometro, rispettivamente all'avvio e in esercizio: la pompa girava e la macchina non riusciva a contare l'acqua che la attraversava.</li>
+<li><strong>ER15</strong> — guasto di comunicazione tra moduli elettronici interni; spesso un flat allentatosi o un connettore bagnato più che una scheda morta.</li>
+<li><strong>ER16 ed ER17</strong> — il macinacaffè: motore surriscaldato e fermo per autoprotezione, poi motore che non ha concluso il compito entro il tempo previsto.</li>
+<li><strong>ER18</strong> — protezione E-fast, cioè un guasto elettrico o di sicurezza come una corrente di dispersione; è anche il codice capace di far scattare il differenziale della tua presa.</li>
+</ul>
+<h2>La famiglia Oracle numera in modo diverso</h2>
+<p>Passando a un Oracle, la stessa idea richiede una tabella più lunga. Oracle (BES980) e Oracle Touch (BES990) condividono una lista da 32 voci, ma la BES980 le mostra come "Error 1"-"Error 32" mentre la BES990 le precede con ER. Le prime sedici seguono la logica dei quartetti su quattro sensori: caldaia del vapore da 1 a 4, caldaia del caffè da 5 a 8 (con l'<a href="https://it.codefixcoffee.com/breville/oracle-bes980/error-8/">Error 8</a> che segnala il cortocircuito della sonda della caldaia caffè durante il funzionamento), gruppo riscaldato da 9 a 12 e lancia vapore da 13 a 16. Le restanti coprono le caldaie che non scaldano (17-19), livello e riempimento della caldaia vapore (20 e 21), i problemi di flussometro (22 e 23), sonde di livello e surriscaldamenti (24-27), un guasto di comunicazione tra schede al 28, il macinacaffè al 29 e 30, il motore della pressatura al 31 e una perdita o ricarica mancata della caldaia vapore al 32.</p>
+<p>Due tabelle minori completano la famiglia. L'Oracle Jet (BES985) usa una lista E1-E19 tutta sua, mentre la Dual Boiler (BES920) custodisce in un menu di self-check codici a due cifre da 00 a 12 invece di mostrarli sul display normale — quindi una Dual Boiler può portarsi dietro un guasto che non hai mai visto comparire a schermo.</p>
+<h2>Leggere da soli il registro degli errori</h2>
+<p>Essendo dati di servizio, la storia della macchina si legge attraverso le stesse schermate. I percorsi hanno un sapore da officina, ma i riparatori li hanno documentati bene:</p>
+<ul>
+<li><strong>Barista Touch e Oracle Touch</strong> — spegni alla presa, tieni premuto il tasto Power frontale mentre riattivi la corrente a muro, rilascia quando compare il logo, inserisci la password di servizio 00000, poi apri Error Counter per i guasti memorizzati o Live Debug per temperature e livelli dell'acqua in tempo reale.</li>
+<li><strong>Barista Touch Impress</strong> — identica sequenza di tasti, ma la password di servizio è 02015.</li>
+<li><strong>Oracle BES980</strong> — con la macchina collegata ma spenta, tieni premuti insieme 1 CUP, 2 CUP e POWER per almeno un secondo; dopo il segnale acustico lungo premi la manopola SELECT per aprire Error Storage e scorrere gli errori da 1 a 32 con i relativi conteggi.</li>
+</ul>
+<p>Considera queste schermate in sola lettura: annota cosa è memorizzato, non toccare le impostazioni e azzera il registro solo a riparazione avvenuta, così saprai dire se il codice ritorna.</p>
+<h2>Quanto costano le riparazioni</h2>
+<p>Persino contro una tabella mai pubblicata, i conti tornano sempre. Un gruppo sonda temperatura costa indicativamente da 25 a 95 € secondo il sensore coinvolto (le sonde di lancia vapore e caraffa latte sono le più care) e i kit di o-ring da 10 a 20 €; un kit di riparazione per la sonda del latte sta sui 30-50 € contro gli 80-95 € del gruppo originale. I preventivi del produttore fuori garanzia per guasti interni girano di norma attorno ai 300-500 €, quindi la riparazione a livello di sensore presso un indipendente resta quasi sempre la strada migliore. La copertura dedicata ai modelli con badge Sage si trova nella <a href="https://it.codefixcoffee.com/uk/">versione britannica del sito</a>.</p>
+<h3>Se la macchina è stata comprata in Italia</h3>
+<p>Da noi questi modelli arrivano con il marchio Sage sulla targhetta e i codici sono identici: questa tabella vale quindi anche per la tua Barista Touch o Oracle. Sul <a href="https://www.sageappliances.co.uk">sito ufficiale Sage</a> trovi manuali d'uso, guide video alla manutenzione e i prodotti originali per la decalcificazione — e gran parte dei codici ER nasce in realtà da manutenzione saltata più che da componenti rotti. Vista la durezza dell'acqua in molte città italiane, rispettare l'avviso di pulizia del gruppo di erogazione e di decalcificazione è il modo più economico di non incontrare mai questi codici.</p>
+</main>
+<footer>Guide di riparazione e spiegazioni dei codici di errore di codefixcoffee.com.</footer>
+</body></html>
