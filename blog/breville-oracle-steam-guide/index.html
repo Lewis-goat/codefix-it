@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Breville/Sage Oracle: vapore e codici, cosa controllare per primo</title>
+<meta name="description" content="Guasti del vapore su Breville/Sage Oracle: cosa significano i codici lato vapore, lo spurgo da provare subito e quando il vero colpevole è il calcare.">
+<link rel="canonical" href="https://it.codefixcoffee.com/blog/breville-oracle-steam-guide/">
+<link rel="alternate" hreflang="en" href="https://blog.codefixcoffee.com/post/breville-oracle-steam-guide/" />
+  <link rel="alternate" hreflang="fr" href="https://fr.codefixcoffee.com/blog/breville-oracle-steam-guide/" />
+  <link rel="alternate" hreflang="de" href="https://de.codefixcoffee.com/blog/breville-oracle-steam-guide/" />
+  <link rel="alternate" hreflang="es" href="https://es.codefixcoffee.com/blog/breville-oracle-steam-guide/" />
+  <link rel="alternate" hreflang="it" href="https://it.codefixcoffee.com/blog/breville-oracle-steam-guide/" />
+  <link rel="alternate" hreflang="pl" href="https://pl.codefixcoffee.com/blog/breville-oracle-steam-guide/" />
+  <link rel="alternate" hreflang="nl" href="https://nl.codefixcoffee.com/blog/breville-oracle-steam-guide/" />
+  <link rel="alternate" hreflang="pt" href="https://pt.codefixcoffee.com/blog/breville-oracle-steam-guide/" />
+  <link rel="alternate" hreflang="hu" href="https://hu.codefixcoffee.com/blog/breville-oracle-steam-guide/" />
+  <link rel="alternate" hreflang="cs" href="https://cs.codefixcoffee.com/blog/breville-oracle-steam-guide/" />
+  <link rel="alternate" hreflang="ro" href="https://ro.codefixcoffee.com/blog/breville-oracle-steam-guide/" />
+  <link rel="alternate" hreflang="sv" href="https://sv.codefixcoffee.com/blog/breville-oracle-steam-guide/" />
+  <link rel="alternate" hreflang="tr" href="https://tr.codefixcoffee.com/blog/breville-oracle-steam-guide/" />
+<link rel="stylesheet" href="/blog/blog.css">
+<link rel="alternate" type="application/rss+xml" title="CodeFix Blog" href="/blog/rss.xml">
+<meta name="google-adsense-account" content="ca-pub-9660119725457689"><script>(function(){var u="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9660119725457689";var d=false;function l(){if(d)return;d=true;var s=document.createElement("script");s.async=true;s.crossOrigin="anonymous";s.src=u;document.head.appendChild(s)}["scroll","pointerdown","keydown","touchstart"].forEach(function(e){addEventListener(e,l,{once:true,passive:true})});addEventListener("load",function(){setTimeout(l,3500)})})();</script></head>
+<body>
+<header class="site"><div class="in"><a class="brand" href="/blog/">☕ CodeFix Blog</a><span><a href="/">Torna al sito</a></span></div></header>
+<main>
+<h1>Breville/Sage Oracle: vapore e codici, cosa controllare per primo</h1>
+<p class="meta">2026-10-22</p>
+<p>Il reparto vapore di una Breville Oracle è il più indaffarato della macchina: caldaia in acciaio, lancia a montatura automatica, sonde di livello e pompa di carico, tutte in temperatura ogni giorno. Ed è anche la fabbrica di gran parte dei codici d'errore. La famiglia Oracle adotta una tabella di servizio da 32 voci che Breville non pubblica, mentre in Europa la stessa macchina esce con il badge <strong>Sage</strong> — codici identici. Prima di pensare a un componente rotto, esaurisci i controlli economici: la maggior parte degli stop lato vapore è una punta della lancia intasata, uno spurgo mancato o calcare su una sonda.</p>
+<h2>Dove stanno i codici vapore nella tabella Oracle</h2>
+<p>Oracle (BES980) e Oracle Touch (BES990) condividono la stessa tabella; la BES980 mostra le voci come "Error 1"-"Error 32", la BES990 con il prefisso ER. Le voci legate al vapore si addensano in cinque punti:</p>
+<ul>
+<li><strong>Error 1-4</strong> — la sonda di temperatura della caldaia vapore nei quattro stati possibili: circuito aperto all'avvio, sonda persa durante il funzionamento, cortocircuito in entrambe le situazioni. Una sonda sola, quattro modi di segnalarla.</li>
+<li><strong>Error 13-16</strong> — lo stesso quartetto per la sonda della lancia vapore, quella che interrompe la montatura automatica alla giusta temperatura del latte. Vive nel punto più bagnato della macchina.</li>
+<li><strong>Error 18</strong> — la caldaia vapore non si riscalda come dovrebbe.</li>
+<li><strong>Error 20 e 21</strong> — livello dell'acqua in caldaia o guasti della pompa di carico, e una lettura della sonda di livello che non combacia con ciò che la scheda si aspetta.</li>
+<li><strong>Error 26</strong> — la caldaia vapore ha superato la temperatura di consigna; l'<strong>Error 32</strong> indica una perdita dalla caldaia o il fallimento della ricarica.</li>
+</ul>
+<p>Non tutto ciò che sta vicino alla lancia è lato vapore: i codici 5-8 appartengono alla sonda della caldaia caffè, e l'<a href="https://it.codefixcoffee.com/breville/oracle-bes980/error-8/">Error 8</a> è la sua variante cortocircuito durante il funzionamento. Il registro memorizzato aiuta a distinguere le famiglie: sulla BES980 tieni premuti insieme 1 CUP, 2 CUP e POWER con la macchina spenta per aprire Error Storage e scorrere tutti e 32 i codici con i relativi conteggi.</p>
+<h2>Il primo controllo: la procedura di spurgo</h2>
+<p>Vapore debole o sputacchiante, oppure un codice subito dopo una bevanda al latte, puntano quasi sempre alla punta della lancia più che alla caldaia:</p>
+<ol>
+<li>Scola la spina e lascia raffreddare la lancia.</li>
+<li>Svita la punta della lancia e mettila in ammollo in acqua calda con un po' di decalcificante; libera ogni foro con lo spillone dell'attrezzo di pulizia.</li>
+<li>Esegui lo spurgo — una decina di secondi di vapore nel vassoio gocce con la punta smontata, poi di nuovo con la punta montata.</li>
+<li>Da qui in poi spurga la lancia dopo ogni sessione di latte: il latte secco nella punta è l'innesco della maggior parte di questi stop.</li>
+</ol>
+<p>Se la macchina controlla anche la pressione del vapore, come fa l'Oracle Jet con il suo codice E16, una punta incrostata può far scattare l'allarme prima ancora che tu ti accorga che il vapore si è indebolito.</p>
+<h2>Durezza dell'acqua, calcare e sonde di livello</h2>
+<p>Dove l'acqua è dura, il calcare scrive codici d'errore in prima persona. Le sonde di livello della caldaia vapore vivono immerse in acqua calda in continuo, e una patina calcarea le isola elettricamente: la scheda legge "manca acqua" con la caldaia piena — la strada classica verso Error 20 o 21, e verso il fallimento di ricarica dell'Error 32. Il calcare colonizza anche il percorso della lancia e l'ingresso della pompa di carico. Una decalcificazione completa, ciclo caldaia vapore incluso, è la diagnosi più economica che si possa fare e da sola risolve una parte sorprendente di questi codici.</p>
+<p>La macchina sorella della gamma conferma la regola: la Dual Boiler tiene i propri codici da 00 a 12 nascosti in un menu di self-check, e il <a href="https://it.codefixcoffee.com/breville/dual-boiler-bes920/00/">codice 00</a> — sonda della caldaia vapore non rilevata — apre una tabella le cui voci di livello e riempimento reagiscono all'acqua dura esattamente nello stesso modo.</p>
+<h3>Il caso italiano: acqua durissima e filtri</h3>
+<p>In molte zone d'Italia — Roma e gran parte di Lazio, Lombardia e Puglia — l'acqua di rete è tra le più dure d'Europa, e su un Oracle questo si traduce in decalcificazioni più frequenti di quante ne lasci intuire il manuale. Sul <a href="https://www.sageappliances.co.uk">sito Sage Appliances</a> trovi le cartine indicatore di durezza e i filtri originali compatibili con l'Oracle: usarne uno, oppure partire da acqua a basso residuo fisso, riduce sensibilmente la probabilità di incappare nei codici 20, 21 e 32. Chi monta il latte ogni giorno dovrebbe abbinare al filtro anche lo spurgo quotidiano della lancia: è la coppia di abitudini che allunga la vita delle sonde.</p>
+<h2>Quando decalcificare e quando smontare</h2>
+<p>Prima la decalcificazione, poi il cacciavite — ma conviene sapere dove la decalcificazione smette di essere utile:</p>
+<ul>
+<li><strong>Decalcifica prima</strong> davanti ai codici di livello, sonda e ricarica (20, 21, 32), davanti a vapore debole senza alcun codice, e su ogni macchina a cui mancano più di tre mesi dall'ultimo ciclo. Costo: una bottiglia di decalcificante.</li>
+<li><strong>La decalcificazione non risolve</strong> un codice sensore che ricompare subito su macchina appena decalcificata e calda — che sia una voce caldaia vapore da 1 a 4 o l'<a href="https://it.codefixcoffee.com/breville/oracle-bes980/error-8/">Error 8</a> sul lato caffè. Un codice che sopravvive a una decalcificazione indica la sonda, il suo cablaggio o un connettore.</li>
+<li><strong>Fermati e controlla le guarnizioni</strong> se Error 26 si ripete: una o-ring della sonda che perde vapore scalda il cavo della sonda e imita una caldaia fuori controllo. Le o-ring nuove costano poco; un triac che non spegne la resistenza no.</li>
+<li><strong>Error 18</strong> su una macchina che non produce più vapore affatto è quasi sempre lato riscaldatore — fusibile termico, resistenza o scheda — non calcare: trattalo come una riparazione, non come una pulizia.</li>
+</ul>
+<h2>Quanto costano i ricambi</h2>
+<p>I gruppi sonda originali stanno tra 25 e 95 € secondo il sensore coinvolto; i gruppi lancia vapore, sonda inclusa, attorno ai 60-95 €; un kit sonda e o-ring sui 85 € e una pompa di carico tra 30 e 60 €. Sullo sfondo, i preventivi fuori garanzia del produttore per guasti interni viaggiano di norma tra 300 e 500 €: prima la bottiglia di decalcificante e poi un intervento a livello di sensore restano quasi sempre il conto migliore. La copertura dei codici con badge Sage si trova nella <a href="https://it.codefixcoffee.com/uk/">versione britannica del sito</a>.</p>
+</main>
+<footer>Guide di riparazione e spiegazioni dei codici di errore di codefixcoffee.com.</footer>
+</body></html>
