@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La decalcificazione, spiegata per bene</title>
+<meta name="description" content="Cosa fa il calcare a termoblocchi e valvole, perché l'aceto non sempre va bene, acido citrico vs lattico e ogni quanto decalcificare.">
+<link rel="canonical" href="https://it.codefixcoffee.com/blog/descaling-science/">
+<link rel="alternate" hreflang="en" href="https://blog.codefixcoffee.com/post/descaling-science/" />
+  <link rel="alternate" hreflang="fr" href="https://fr.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="de" href="https://de.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="es" href="https://es.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="it" href="https://it.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="pl" href="https://pl.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="nl" href="https://nl.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="pt" href="https://pt.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="hu" href="https://hu.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="cs" href="https://cs.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="ro" href="https://ro.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="sv" href="https://sv.codefixcoffee.com/blog/descaling-science/" />
+  <link rel="alternate" hreflang="tr" href="https://tr.codefixcoffee.com/blog/descaling-science/" />
+<link rel="stylesheet" href="/blog/blog.css">
+<link rel="alternate" type="application/rss+xml" title="CodeFix Blog" href="/blog/rss.xml">
+<meta name="google-adsense-account" content="ca-pub-9660119725457689"><script>(function(){var u="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9660119725457689";var d=false;function l(){if(d)return;d=true;var s=document.createElement("script");s.async=true;s.crossOrigin="anonymous";s.src=u;document.head.appendChild(s)}["scroll","pointerdown","keydown","touchstart"].forEach(function(e){addEventListener(e,l,{once:true,passive:true})});addEventListener("load",function(){setTimeout(l,3500)})})();</script></head>
+<body>
+<header class="site"><div class="in"><a class="brand" href="/blog/">☕ CodeFix Blog</a><span><a href="/">Torna al sito</a></span></div></header>
+<main>
+<h1>La decalcificazione, spiegata per bene</h1>
+<p class="meta">2026-10-27</p>
+<p>Ogni elenco di guasti delle macchine da caffè ha una causa che domina su tutte le altre — il calcare. L'acqua dura trasporta calcio e magnesio disciolti; quando la scaldi, i carbonati escono dalla soluzione e si depositano sul metallo più caldo della macchina. Questo è, in sintesi, il calcare, e sta dietro a una quota sproporzionata dei codici trattati su questo sito — guasti della resistenza, guasti di valvola, priming impossibili e spie di decalcificazione inchiodate. È anche l'unica famiglia di guasti che si risolve con 10 €.</p>
+<h2>Cosa fa il calcare a un termoblocco</h2>
+<p>Un termoblocco è una massa metallica attraversata da un canale sottile in cui l'acqua si scalda lungo il viaggio verso la tazza. Il calcare si deposita sulle pareti di quel canale, e il carbonato di calcio è un discreto isolante termico — che è esattamente il problema.</p>
+<ul>
+<li><strong>Il riscaldamento rallenta.</strong> La resistenza lavora più a lungo per arrivare a temperatura e, con molto calcare, alcune macchine arrivano a far scattare i controlli termici della scheda — la famiglia di errori del termoblocco Jura collega esplicitamente il calcare a questi codici, e <a href="https://www.jura.com">il sito Jura</a> insiste sulla decalcificazione regolare per lo stesso motivo.</li>
+<li><strong>La sonda mente.</strong> Lo strato di calcare altera la velocità con cui la sonda NTC nel blocco percepisce il calore, quindi la scheda di controllo può credere che la macchina stia surriscaldando — o che non scaldi affatto — quando nessuna delle due cose è vera.</li>
+<li><strong>Il blocco corre caldo.</strong> Un metallo isolato lavora sopra la temperatura di progetto, sollecitando i fusibili termici predisposti a proteggerlo. Un termoblocco incrostato fino al blocco si sostituisce, non si pulisce — da 90 a 180 € su una Jura, per un calcare che una bottiglia di decalcificante avrebbe rimosso.</li>
+</ul>
+<h2>Cosa succede a valvole e passaggi sottili</h2>
+<p>Il secondo fronte di danni è tutto ciò che è stretto. Sulle Jura con valvola ceramica motorizzata, il calcare irrigidisce il disco finché non raggiunge più la posizione comandata dalla scheda — è esattamente ciò che segnala l'<a href="https://it.codefixcoffee.com/jura/automatic-machines/error-6/">Errore 6</a>, ed è per questo che una decalcificazione completa è il primo passo, gratuito, del suo rimedio. Gli ingressi stretti si otturano allo stesso modo — l'<a href="https://it.codefixcoffee.com/philips-saeco/espresso-machines/error-05/">Errore 05 Philips</a> può sopravvivere al priming perché un ingresso incrostato non lascia proprio pescare acqua alla pompa. Anche i sensori di livello sono nel mirino — calcare sul galleggiante del serbatoio è la causa classica del falso "riempire il serbatoio" a serbatoio pieno. E un flussimetro incrostato smette di contare, che è uno dei modi in cui <a href="https://it.codefixcoffee.com/delonghi/magnifica-dinamica/descale-light-stays-on-after-descaling/">la spia De'Longhi resta accesa dopo la decalcificazione</a>: la macchina non ha mai registrato il ciclo che hai eseguito.</p>
+<h2>Perché l'aceto è la scelta sbagliata, in certe macchine</h2>
+<p>L'aceto da cucina è acido acetico e, nelle macchine da espresso, accumula tre colpi a carico. È debole, quindi per ammorbidire il calcare compatto in un canale altrettanto compatto serve un tempo di contatto lungo. Aggredisce i raccordi in ottone cromato e gonfia alcune guarnizioni in gomma. E il suo odore sopravvive a molti risciacqui dentro i tubi in plastica. <a href="https://www.nespresso.com">Nespresso</a> è esplicita sulle conseguenze — niente decalcificazione con l'aceto, danneggia il circuito e fa decadere l'assistenza — un punto da tenere a mente quando un <a href="https://it.codefixcoffee.com/nespresso/vertuo-machines/blinking-lights/">pattern di luci arancioni della Vertuo</a> ti spedisce alla procedura di decalcificazione. Un bollitore? L'aceto va benissimo. Una macchina con pompa, valvola e garanzia? Decalcificante vero.</p>
+<h2>Acido citrico o acido lattico</h2>
+<p>Quasi ogni decalcificante in commercio si basa su uno di due acidi alimentari:</p>
+<ul>
+<li><strong>Acido citrico</strong> — in polvere, da 3 a 6 € per una scorta che dura un anno a molte famiglie, forte e rapido sul calcare pesante. È la base dei decalcificanti universali e, ben risciacquato, non lascia nulla dietro.</li>
+<li><strong>Acido lattico</strong> — più delicato e quasi privo di odore, comune nelle bottiglie a marchio fornite con le macchine. Tratta meglio guarnizioni e cromature, al prezzo di un tempo di contatto leggermente più lungo per lo stesso calcare.</li>
+</ul>
+<p>Entrambi funzionano se fatti girare nel programma decalcificazione della macchina stessa. Conta completarlo — i contatori registrano solo un ciclo intero avviato dal menu apposito, erogatore montato e fase di risciacquo inclusa. Se lo interrompi o lo improvvisi con una brocca, <a href="https://it.codefixcoffee.com/delonghi/magnifica-dinamica/descale-light-stays-on-after-descaling/">la spia resta accesa</a>.</p>
+<h2>Ogni quanto — dipende dalla tua acqua</h2>
+<p>I promemoria delle macchine contano volumi — tazze erogate, litri pompati — non la durezza, quindi chi ha acqua dura deve decalcificare prima che la spia si accenda. Una regola pratica:</p>
+<ul>
+<li><strong>Acqua dolce</strong> (sotto i 7 °dH circa, pari a 125 ppm): basta il promemoria della macchina, nella pratica ogni 3-6 mesi.</li>
+<li><strong>Media durezza</strong> (7-14 °dH): ogni 2-3 mesi.</li>
+<li><strong>Acqua dura</strong> (oltre i 14 °dH): indicativamente ogni mese, e anche prima se il flusso rallenta o la pompa diventa rumorosa.</li>
+</ul>
+<p>Una confezione di strisce per la durezza costa da 5 a 10 €, e il gestore idrico pubblica il dato della tua zona. I segnali tardivi sono gli stessi su tutti i marchi — flussi lenti e sottili, pompa più rumorosa, caffè meno caldo — e infine i codici qui sopra. Decalcifica con regolarità e la maggior parte di quei codici non arriverà mai; una bottiglia da 10 € è la riparazione più economica che questo sito potrà mai consigliare.</p>
+<h3>Consigli pratici per chi è in Italia</h3>
+<p>In Italia la durezza dell'acqua viene quasi sempre comunicata in gradi francesi (°fH) nelle analisi pubblicate dai gestori idrici: per confrontarla con i °dH citati sopra dividila per 1,78 — 7 °dH corrispondono a circa 12,5 °fH e 14 °dH a circa 25 °fH. Cerca l'analisi della tua rete sul sito del gestore idrico o del Comune, perché il valore cambia anche da un quartiere all'altro. Ricorda infine che ampie zone del Paese, dalla Pianura Padana a buona parte del Centro-Sud, hanno acqua dura o molto dura — lì la cadenza mensile è la norma, non l'eccezione.</p>
+</main>
+<footer>Guide di riparazione e spiegazioni dei codici di errore di codefixcoffee.com.</footer>
+</body></html>
